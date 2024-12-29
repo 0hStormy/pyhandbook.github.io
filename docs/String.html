@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>str</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+    <h1>String (str)</h1>
+    <p>
+        A String is a type of value used in Python.
+        A string is used to represent text.
+        The String type is referred to as <code>str</code> internally in Python.
+        Strings are different from other types because they always either have double or single quotes around them.
+    </p>
+
+    <h2>Example</h2>
+    <p>Here is an example of a string:</p>
+    <md-block>
+      ``` py
+      "Hello World"
+      ```
+    </md-block>
+
+    <p>You can also convert another value to a string with our example value being a integer of 5:</p>
+    <md-block>
+      ``` py
+      str(5)
+      ```
+    </md-block>
+
+    <p>
+      You can also use type conversion in function parameters,
+      this example is with <code>print()</code> showing the output of a integer variable:
+    </p>
+    <md-block>
+      ``` py
+      import random
+
+      randNum = random.randint(1, 5)
+      print(f"You're number is... {str(randNum)}")
+      ```
+    </md-block>
+
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>

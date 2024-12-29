@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>f-strings</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+
+    <h1>f-strings</h1>
+    <p>
+      f-strings are a clean way of referencing variables and or the return value of a function in a string.
+      To specify a string as an f-string be putting an <code>f</code> before quotes.
+      f-strings can be used with both double and single quotes.
+      To define a variable or function return value you surround the variable or function in currly brackets.
+    </p>
+    
+    <h2>Example</h2>
+    <md-block>
+      ``` py
+      import os
+      print(f"Current user: {os.login()}")
+      ```
+    </md-block>
+    
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>

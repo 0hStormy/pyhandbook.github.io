@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>str</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+    <h1>integer (int)</h1>
+    <p>
+        An Integer is a type of value used in Python.
+        An integer is used to represent a number with no decimals (see <a href="Float.html">floats</a> for more info).
+        The Integer type is referred to as <code>int</code> internally in Python.
+        Integers are typed as you would type a number anywhere else.
+    </p>
+
+    <h2>Example</h2>
+    <p>Here is an example of a integer:</p>
+    <md-block>
+      ``` py
+      2048
+      ```
+    </md-block>
+
+    <p>You can also convert another value to a integer (provided it can represent a number), this example is of a string with the number of the user's choice:</p>
+    <md-block>
+      ``` py
+      userInput = input("Please enter a number: ")
+      inputtedInt = int(userInput)
+      ```
+    </md-block>
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>

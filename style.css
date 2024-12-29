@@ -1,0 +1,242 @@
+@import url("internal/prism.css");
+
+:root {
+  --background: #292929;
+  --main: #3d3d3d;
+  --alt: #424242;
+  --alt2: #383838;
+  --text: #fff;
+  --tinytext: #b3b3b3;
+  --accent: #2b97bb;
+  --accent2: #ffcb20;
+  --accent3: #598a43;
+  --shadows: #111;
+  --screenwidth: ;
+}
+
+body {
+  font-family: "Noto Sans", Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 32px;
+  margin-top: 64px;
+  line-height: 150%;
+}
+
+hr {
+height: 2pt;
+background-color: var(--accent);
+border: none;
+}
+
+.logo {
+  width: 48pt;
+  filter: invert();
+  margin-inline: 10pt;
+}
+
+a {
+color: var(--accent);
+text-decoration: none;
+}
+
+h1 {
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--alt);
+}
+
+img {
+border-radius: 5pt;
+cursor: pointer;
+transition: all, cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.25s;
+width: 80%;
+max-width: 720px;
+}
+
+img:active {
+z-index: 1;
+width: 100%;
+max-width: 1280px;
+scale: 1.2;
+box-shadow: var(--accent) 0px 0px 60px;
+}
+
+blockquote {
+  background-color: var(--alt2);
+  padding: 10pt;
+  text-align: center;
+  border-radius: 16px;
+  border: solid;
+  border-color: var(--accent2);
+  border-width: 2px;
+}
+
+.spoiler {
+filter: blur(10px);
+}
+
+.smallerimg {
+  width: 512px;
+}
+
+.spoiler:active:active {
+z-index: 1;
+filter: blur(0px);
+}
+
+.flag {
+border-radius: 1pt;
+width: 20px;
+}
+
+.sobericon {
+  width: 256px;
+  align-self: center;
+}
+
+.banner {
+height: 200pt;
+background-image: linear-gradient(to bottom right, var(--accent), var(--accent2));
+margin-bottom: 20pt;
+margin-inline: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 40pt;
+font-weight: bold;
+color: white;
+box-shadow: var(--shadows) 0px 0px 50px;
+line-height: 120%;
+}
+
+.root {
+max-width: 960px;
+margin-inline: auto;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.tiny {
+  font-size: 70%;
+  color: var(--tinytext);
+}
+
+.box {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--background);
+padding: 10pt;
+border-radius: 10pt;
+text-align: start;
+max-width: 960px;
+transition: all, 0.5s;
+margin: 15pt;
+}
+
+.subbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--alt);
+  padding: 10pt;
+  border-radius: 10pt;
+  border-style:solid;
+  border-color: var(--accent);
+  border-width: 2pt;
+  text-align: start;
+  max-width: 960px;
+  transition: all, 0.5s;
+  margin: 5pt;
+  }
+
+button {
+  border-radius: 10pt;
+  background-color: var(--alt2);
+  padding: 15px 100px;
+  box-shadow: 0px 10px 35px var(--shadows);  
+  border-color: transparent;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: var(--text);
+  border-style:solid;
+  border-color: var(--accent);
+  font-weight: bold;
+}
+
+iframe {
+width: 100%;
+border: none;
+}
+
+.nav {
+  text-align: center;
+  background-color: var(--main);
+  padding: 10px;
+  border-radius: 10px;
+  margin: -24px;
+  margin-bottom: 24px;
+}
+
+
+.div_audio {
+max-width: 95%;
+background-color: var(--main);
+border-width: 2pt;
+border-radius: 10pt;
+border-style:solid;
+border-color: var(--accent);
+padding: 10pt;
+margin: 10pt;
+box-shadow: var(--shadows) 0px 0px 50px;
+}
+
+audio {
+  border-style:solid;
+  border-color: var(--accent);
+  border-radius: 30pt;
+}
+
+table, th, td {
+  border: 1px solid var(--accent3);
+  padding: 20px;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.topnav {
+  background-color: var(--main);
+  box-shadow: var(--shadows) 0px 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.topnav a {
+  float: left;
+  color: var(--text);
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: all, 0.2s;
+  border-radius: 10pt;
+}
+
+.topnav a:hover {
+  background-color: var(--alt2);
+}
+
+.topnav a.active {
+  background-color: var(--accent);
+  color: white;
+}
