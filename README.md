@@ -1,2 +1,3 @@
-# soberdocs
-Documentation from public knowledge about Sober
+# Python For All
+
+Python handbook that doesn't suck.
