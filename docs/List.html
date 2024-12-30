@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>list</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+    <h1>List (list)</h1>
+    <p>
+        A list is a type of value used in Python.
+        A string is used to represent many items of the same type of value together.
+        The List type is referred to as <code>list</code> internally in Python.
+        Lists are unique because they can store as many values as you want in them, and then retrieve the value from an index (position in list) later.
+    </p>
+
+    <h2>Example</h2>
+    <p>Here is an example of a list:</p>
+    <md-block>
+      ``` py
+      ["Eggs", "Yogurt", "Ham", "Apple"]
+      ```
+    </md-block>
+
+    <p>You can append values to a list like this:</p>
+    <md-block>
+        ``` py
+        exampleList = ["Eggs", "Yogurt", "Ham", "Apple"]
+        exampleList.append("Butter")
+        ```
+    </md-block>
+
+    <p>
+        You can also iterate through a list,
+        here's an example of iterating through a list and then using <a href="f-strings.html">f-strings</a> to print the value and the index:
+    </p>
+    <md-block>
+        ``` py
+        exampleList = ["Eggs", "Yogurt", "Ham", "Apple"]
+        index = 0
+
+        for item in exampleList:
+            index += 1
+            print(f"Item #{index}: {item}")
+        ```
+    </md-block>
+
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>
