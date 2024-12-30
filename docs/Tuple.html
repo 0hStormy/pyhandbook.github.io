@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>tuple</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+    <h1>Tuple (tuple)</h1>
+    <p>
+        A Tuple is a type of value used in Python.
+        A Tuple is used to represent many items of the same type of value together,
+        but unlike a list a Tuple is immutable, which means values in the Tuple cannot be changed once the variable is defined
+        The Tuple type is referred to as <code>tuple</code> internally in Python.
+    </p>
+
+    <blockquote>Tip: Python uses <code>0</code> as the first index in a list or Tuple.</blockquote>
+
+    <h2>Example</h2>
+    <p>Here is an example of a Tuple:</p>
+    <md-block>
+      ``` py
+      ("Hello!", "Hola!", "Bonjour", "こんにちは！")
+      ```
+    </md-block>
+
+    <p>You can read from an index like this:</p>
+    <md-block>
+        ``` py
+        hello = ("Hello!", "Hola!", "Bonjour", "こんにちは！")
+        print(f"{hello[3]}") # Gets value from 4th index in Tuple
+        ```
+    </md-block>
+
+    <p>
+        You can also iterate through a Tuple,
+        here's an example of iterating through a Tuple and then using <a href="f-strings.html">f-strings</a> to print the value and the index:
+    </p>
+    <md-block>
+        ``` py
+        hello = ("Hello!", "Hola!", "Bonjour", "こんにちは！")
+        index = 0
+
+        for text in hello:
+            index += 1
+            print(f"Text #{index}: {text}")
+        ```
+    </md-block>
+
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>

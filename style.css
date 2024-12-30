@@ -65,12 +65,9 @@ box-shadow: var(--accent) 0px 0px 60px;
 
 blockquote {
   background-color: var(--alt2);
-  padding: 10pt;
+  padding: 8pt;
   text-align: center;
   border-radius: 16px;
-  border: solid;
-  border-color: var(--accent2);
-  border-width: 2px;
 }
 
 .spoiler {
