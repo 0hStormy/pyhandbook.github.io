@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../style.css" rel="stylesheet" type="text/css" media="all">
-    <title>f-strings</title>
+    <title>r-strings</title>
 </head>
 <body>
   <div class="topnav">
@@ -13,19 +13,17 @@
   </div>
   <div class="root">
 
-    <h1>f-strings</h1>
+    <h1>r-strings</h1>
     <p>
-      f-strings are a clean way of referencing variables and or the return value of a function in a string.
-      To specify a string as an f-string by putting an <code>f</code> before quotes.
-      f-strings can be used with both double and single quotes.
-      To define a variable or function return value you surround the variable or function in currly brackets.
+      r-strings in Python are raw strings they dont need regular string things like escaping <code>\</code> with <code>\\</code>.
+      To specify a string as an r-string by putting an <code>r</code> before quotes.
+      r-strings can be used with both double and single quotes.
     </p>
     
     <h2>Example</h2>
     <md-block>
       ``` py
-      import os
-      print(f"Current user: {os.getlogin()}")
+      print(r'Im printed with a raw string')
       ```
     </md-block>
     
