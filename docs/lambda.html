@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>lambda</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+    <a href="../Contributors.html">Contributors</a>
+  </div>
+  <div class="root">
+
+    <h1>lambda</h1>
+    <p>
+      Lambda is a way of cleaning up code and removing the use of functions that would otherwise only be used once.
+      With lambda the paramaters of the function come before the <code>:</code> and what the function returns comes after.
+    </p>
+    
+    <h2>Defining Lambda</h2>
+    <md-block>
+      ``` py
+      c = lambda a, b : a + x
+      ```
+    </md-block>
+    <h2>Calling Lambda Functions</h2>
+    <md-block>
+      ``` py
+      # output: 3
+      print(c(1,2))
+      ```
+    </md-block>
+    
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>
