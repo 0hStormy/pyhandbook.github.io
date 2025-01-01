@@ -91,14 +91,12 @@ width: 20px;
   align-self: center;
   border-radius: 100px;
   margin: 5px;
-  transition: width 300ms;
-  transition: border 100ms;
+  transition: 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .contributoricon:hover {
   width: 100px;
   border: 2px solid var(--accent);
-  transition: width 300ms;
 }
 
 .contributorContainer {
