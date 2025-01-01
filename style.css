@@ -240,7 +240,6 @@ table, th, td {
   padding: 8px 10px;
   text-decoration: none;
   transition: all, 0.2s;
-  border-radius: 10pt;
 }
 
 .topnav a:hover {
