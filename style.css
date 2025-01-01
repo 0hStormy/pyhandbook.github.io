@@ -49,19 +49,12 @@ h1 {
 
 img {
 border-radius: 5pt;
-cursor: pointer;
-transition: all, cubic-bezier(0.175, 0.885, 0.32, 1.275), 0.25s;
+/* got rid of cursor: point because what was even the point of that */
 width: 80%;
 max-width: 720px;
 }
 
-img:active {
-z-index: 1;
-width: 100%;
-max-width: 1280px;
-scale: 1.2;
-box-shadow: var(--accent) 0px 0px 60px;
-}
+/* i got rid of the active thing because when i used it my browser crashed */
 
 blockquote {
   background-color: var(--alt2);
@@ -91,6 +84,29 @@ width: 20px;
 .sobericon {
   width: 256px;
   align-self: center;
+}
+
+.contributoricon {
+  width: 90px;
+  align-self: center;
+  border-radius: 100px;
+  margin: 5px;
+  transition: width 300ms;
+  transition: border 100ms;
+}
+
+.contributoricon:hover {
+  width: 100px;
+  border: 2px solid var(--accent);
+  transition: width 300ms;
+}
+
+.contributorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
 }
 
 .banner {
