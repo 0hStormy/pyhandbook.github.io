@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>Function</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../browser.html">Browser</a>
+  </div>
+  <div class="root">
+    <h1>Function</h1>
+    <p>
+        A function is a way to create reusable pieces of code that can have variables inputted into.
+        Python has hundreds of functions built-in, a couple example include <code>print()</code> and <code>sort()</code>.
+        You can also write your own functions in Python to add your own reusable operations.
+    </p>
+
+    <h2>Defining Functions</h2>
+
+    <p>
+        Let's define our own function in Python. 
+        First, think of a easy name to remember and one that won't conflict with built-in functions.
+        Next, you'll want to type in <code>def</code> and then the function name along with a set of parenthesis and a colon that end.
+        Finally create a new indented line and start writing code!
+    </p>
+
+    <h3>Example</h3>
+
+    <md-block>
+        ``` py
+        def myFunction(): # Define function
+            print("It works!")
+            return
+
+        myFunction() # Call function later
+        ```
+    </md-block>
+
+    <h2>Parameters</h2>
+    <p>
+        In Python, you can also create functions that take variables as an input.
+        You can use this to write a long piece of code once and use it anywhere easily.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+        Here's an example of a very basic logging function, which takes a message and a severity number:
+    </p>
+
+    <md-block>
+        ``` py
+        def log(message, severity=0):
+            severityLevels = ["Info", "Warn", "Error"]
+            print(f"[{severityLevels[severity]}] {message}")
+
+        log("Logging works!", 0)
+        ```
+    </md-block>
+
+  </div>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="../internal/prism.js"></script>
+</body>
+</html>
